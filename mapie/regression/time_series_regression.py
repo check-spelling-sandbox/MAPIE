@@ -166,7 +166,7 @@ class TimeSeriesRegressor(_MapieRegressor):
         m, n = len(X), len(self.conformity_scores_)
         if m > n:
             raise ValueError(
-                "The number of observations to update is higher than the"
+                "The number of observations to update is greater than the"
                 "number of training instances."
             )
         new_conformity_scores_ = self._relative_conformity_scores(

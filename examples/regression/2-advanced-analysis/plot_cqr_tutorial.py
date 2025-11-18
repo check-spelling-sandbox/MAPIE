@@ -228,7 +228,7 @@ def plot_prediction_intervals(
 # Here, wWe use MAPIE to return the predictions and prediction intervals.
 # We will use an ``confidence_level=CONFIDENCE_LEVEL``, (this is the target
 # coverage for our prediction intervals).
-# Note that that we will use symmetrical residuals for the CQR.
+# Note that we will use symmetrical residuals for the CQR.
 
 
 STRATEGIES = {

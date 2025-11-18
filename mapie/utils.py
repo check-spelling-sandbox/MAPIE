@@ -691,7 +691,7 @@ def _check_verbose(verbose: int) -> None:
 
 def _check_nan_in_aposteriori_prediction(X: ArrayLike) -> None:
     """
-    Check that all the points are used at least once, otherwise this means
+    Check that all the points are used at least once; otherwise, this means
     you have set the number of subsamples too low.
 
     Parameters

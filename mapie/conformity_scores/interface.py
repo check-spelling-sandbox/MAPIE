@@ -111,7 +111,7 @@ class BaseConformityScore(metaclass=ABCMeta):
 
         reversed: bool
             Boolean specifying whether we take the upper or lower quantile,
-            if False, the alpha quantile, otherwise the (1-alpha) quantile.
+            if False, the alpha quantile; otherwise, the (1-alpha) quantile.
 
             By default ``False``.
 

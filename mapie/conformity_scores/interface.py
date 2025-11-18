@@ -130,10 +130,10 @@ class BaseConformityScore(metaclass=ABCMeta):
         n_calib: int = np.min(np.sum(~np.isnan(conformity_scores), axis=axis))
         signed = 1 - 2 * reversed
 
-        # Adapt alpha w.r.t upper/lower : alpha vs. 1-alpha
+        # Adapt alpha w.r.t. upper/lower : alpha vs. 1-alpha
         alpha_ref = (1 - 2 * alpha_np) * reversed + alpha_np
 
-        # Adjust alpha w.r.t quantile correction
+        # Adjust alpha w.r.t. quantile correction
         alpha_cor = np.ceil(alpha_ref * (n_calib + 1)) / n_calib
         alpha_cor = np.clip(alpha_cor, a_min=0, a_max=1)
 

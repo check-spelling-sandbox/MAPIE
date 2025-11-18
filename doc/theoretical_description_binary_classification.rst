@@ -43,7 +43,7 @@ In a few words, what you need to remember about these concepts :
 1. Set Prediction
 -----------------
 
-Definition 1 (Prediction Set (PS) w.r.t :math:`f`) [1].
+Definition 1 (Prediction Set (PS) w.r.t. :math:`f`) [1].
     Fix a predictor :math:`\hat{\mu}:\mathcal{X} \to [0, 1]` and let :math:`(\mathcal{X}, \mathcal{Y}) \sim P`.
     Define the set of all subsets of :math:`\mathcal{Y}`, :math:`L = \{\{0\}, \{1\}, \{0, 1\}, \emptyset\}`.
     A function :math:`S:[0,1]\to\mathcal{L}` is said to be :math:`(1-\alpha)`-PS with respect to :math:`\hat{\mu}` if:
@@ -61,7 +61,7 @@ to use a set predictor.
 2. Probabilistic Prediction
 ---------------------------
 
-Definition 2 (Confidence Interval (CI) w.r.t :math:`\hat{\mu}`) [1].
+Definition 2 (Confidence Interval (CI) w.r.t. :math:`\hat{\mu}`) [1].
     Fix a predictor :math:`\hat{\mu}:\mathcal{X} \to [0, 1]` and let :math:`(\mathcal{X}, \mathcal{Y}) \sim P`.
     Let :math:`I` denote the set of all subintervals of :math:`[0,1]`.
     A function :math:`C:[0,1]\to\mathcal{I}` is said to be :math:`(1-\alpha)`-CI with respect to :math:`\hat{\mu}` if:

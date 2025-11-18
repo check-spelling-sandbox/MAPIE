@@ -462,7 +462,7 @@ class BinaryClassificationController:
         predict_params: NDArray,
     ) -> bool:
         """
-        Check if the the parameters (the λ) are multi-dimensional.
+        Check if the parameters (the λ) are multi-dimensional.
         """
         if predict_params.ndim == 1:
             return False

@@ -334,7 +334,7 @@ def get_coverages_widths_by_bins(
 ):
     """
     Given the results from MAPIE, this function split the data
-    according the the test values into bins and calculates coverage
+    according the test values into bins and calculates coverage
     or width per bin.
     """
     cuts = []
@@ -415,7 +415,7 @@ plt.show()
 
 
 ##############################################################################
-# When observing the values of the the interval width we again see what was
+# When observing the values of the interval width we again see what was
 # observed in the previous graphs with the interval widths. It's important to
 # note that the prediction
 # intervals are shorter when the estimator is more certain.

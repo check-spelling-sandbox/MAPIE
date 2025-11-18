@@ -512,11 +512,11 @@ class _MapieQuantileRegressor(_MapieRegressor):
 
         ValueError
             The estimator does not have the ``"loss_name"`` in its parameters
-            and therefore can not be used as an estimator.
+            and therefore cannot be used as an estimator.
 
         ValueError
             There is no quantile ``"loss_name"`` and therefore this estimator
-            can not be used as a ``_MapieQuantileRegressor``.
+            cannot be used as a ``_MapieQuantileRegressor``.
 
         ValueError
             The parameter to set the alpha value does not exist in this

@@ -342,7 +342,7 @@ class PrecisionRecallController(BaseEstimator, ClassifierMixin):
         if (estimator is None) and (not _refit):
             raise ValueError(
                 "Invalid estimator with partial_fit. "
-                "If the estimator is ``None`` you can not "
+                "If the estimator is ``None`` you cannot "
                 "use partial_fit."
             )
         if (estimator is None) and (_refit):
@@ -582,7 +582,7 @@ class PrecisionRecallController(BaseEstimator, ClassifierMixin):
 
         delta : Optional[float]
             Can be a float, or ``None``. If using method="rcps", then it
-            can not be set to ``None``.
+            cannot be set to ``None``.
             Between 0 and 1, the level of certainty at which we compute
             the Upper Confidence Bound of the average risk.
             Lower ``delta`` produce larger (more conservative) prediction

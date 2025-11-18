@@ -18,7 +18,7 @@ to estimate prediction intervals associated with time series forecast.
 Here, we use the Victoria electricity demand dataset used in the book
 "Forecasting: Principles and Practice" by R. J. Hyndman and G. Athanasopoulos.
 The electricity demand features daily and weekly seasonalities and is impacted
-by the temperature, considered here as a exogeneous variable.
+by the temperature, considered here as an exogeneous variable.
 
 Before estimating prediction intervals with MAPIE, we optimize the base model,
 here a Random Forest model. The hyper-parameters are

@@ -38,7 +38,7 @@ def test_split_SubSample() -> None:
 @pytest.mark.parametrize("n_samples", [4, 6, 8, 10])
 @pytest.mark.parametrize("n_resamplings", [1, 2, 3])
 def test_n_samples_int(n_samples: int, n_resamplings: int) -> None:
-    """Test outputs of subsamplings when n_samples is a int"""
+    """Test outputs of subsamplings when n_samples is an int"""
     X = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     cv = Subsample(
         n_resamplings=n_resamplings, random_state=0, n_samples=n_samples, replace=False

@@ -1450,7 +1450,7 @@ def _check_n_samples(
     n_samples: Union[float, int]
         Can be a float between 0 and 1 or a int
         Between 0 and 1, represent the part of data in the train sample
-        When n_samples is a int, it represents the number of elements
+        When n_samples is an int, it represents the number of elements
         in the train sample
 
     Returns

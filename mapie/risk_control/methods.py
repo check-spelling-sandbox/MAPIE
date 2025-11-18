@@ -287,7 +287,7 @@ def compute_hoeffding_bentkus_p_value(
     alpha: Union[float, Iterable[float]].
         Contains the different alphas control level.
         The empirical risk must be less than alpha.
-        If it is a iterable, it is a NDArray of shape
+        If it is an iterable, it is a NDArray of shape
         (n_alpha, ).
 
     binary: bool, default=False

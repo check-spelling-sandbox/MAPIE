@@ -268,7 +268,7 @@ class BaseRegressionScore(BaseConformityScore, metaclass=ABCMeta):
             Conformity scores.
 
         ensemble: bool
-            Boolean determining whether the predictions are ensembled or not.
+            Boolean determining whether or not predictions are ensembled.
 
             By default ``False``.
 

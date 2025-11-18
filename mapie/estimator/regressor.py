@@ -534,7 +534,7 @@ class EnsembleRegressor:
             Test data.
 
         ensemble: bool
-            Boolean determining whether the predictions are ensembled or not.
+            Boolean determining whether or not predictions are ensembled.
             If ``False``, predictions are those of the model trained on the
             whole training set.
             If ``True``, predictions from perturbed models are aggregated by

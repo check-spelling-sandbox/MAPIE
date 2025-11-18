@@ -46,7 +46,7 @@ def get_homoscedastic_data(
     Generate one-dimensional data from a given function,
     number of training and test samples and a given standard
     deviation for the noise.
-    The training data data is generated from an exponential distribution.
+    The training data is generated from an exponential distribution.
 
     Parameters
     ----------

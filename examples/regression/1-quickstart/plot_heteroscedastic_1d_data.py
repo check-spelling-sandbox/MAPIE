@@ -48,7 +48,7 @@ def get_heteroscedastic_data(
     Generate one-dimensional data from a given function,
     number of training and test samples and a given standard
     deviation increases linearly with x.
-    The training data data is generated from an exponential distribution.
+    The training data is generated from an exponential distribution.
 
     Parameters
     ----------

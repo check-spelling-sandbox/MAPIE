@@ -850,7 +850,7 @@ def _compute_quantiles(vector: NDArray, alpha: NDArray) -> NDArray:
     ----------
     vector: NDArray of shape Union[(n_samples, 1), (n_samples, 1, n_alphas)]
         Vector on which compute the quantile. If the vector has 3 dimensions,
-        then each 1-alpha quantile will be computed on its corresping matrix
+        then each 1-alpha quantile will be computed on its corresponding matrix
         selected on the last axis of the matrix.
     alpha: NDArray for shape (n_alphas, )
         Risk levels.

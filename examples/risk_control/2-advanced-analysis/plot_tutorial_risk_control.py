@@ -204,7 +204,7 @@ plt.show()
 # The procedure consist in multiple hypothesis testing. This is why the output
 # of this procedure isn't reduce to one value of ``λ``.
 #
-# More precisely, we look after all the ``λ`` that sastisfy the
+# More precisely, we look after all the ``λ`` that satisfy the
 # following:
 # ``𝒫(R(𝒯̂λ̂) ≤ α) ≥ 1 − δ``,
 # where ``R(𝒯̂λ̂)`` is the risk we want to control and

@@ -192,7 +192,7 @@ class ResidualNormalisedScore(BaseRegressionScore):
     def _predict_residual_estimator(self, X: ArrayLike) -> NDArray:
         """
         Returns the predictions of the residual estimator. Raises a warning if
-        the model predicts neagtive values.
+        the model predicts negative values.
 
         Parameters
         ----------

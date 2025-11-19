@@ -159,7 +159,7 @@ def test_gamma_conformity_score_consistency(y_pred: NDArray) -> None:
         [1, -7, 9, 11, 13, 15],
     ],
 )
-def test_gamma_conformity_score_check_oberved_value(
+def test_gamma_conformity_score_check_observed_value(
     y_pred: NDArray, y_toy: NDArray
 ) -> None:
     """Test methods consistency for GammaConformityScore."""

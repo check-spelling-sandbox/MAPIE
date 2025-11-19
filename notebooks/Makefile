@@ -8,7 +8,7 @@ convert2rst:
 	gsed -i -e'/WARNING:tensorflow/d' $(dir)/$(file).rst
 	gsed -i -e's/.. code:: ipython3/.. code-block:: python/g' $(dir)/$(file).rst
 	gsed -i -e's/``/`/g' $(dir)/$(file).rst
-	gsed -i -e's/`TensorflowToMapie`/``TensorflowToMapie``/g' $(dir)/$(file).rst
+	gsed -i -e's/`TensorFlowToMapie`/``TensorFlowToMapie``/g' $(dir)/$(file).rst
 	gsed -i -e'/<matplotlib/d' $(dir)/$(file).rst
 	gsed -i -e'/<Figure/d' $(dir)/$(file).rst
 	gsed -i -e'/Apple M1/d' $(dir)/$(file).rst

@@ -236,7 +236,7 @@ jackknife+-after-bootstrap is performed in four main steps:
 - These predictions are aggregated according to a given aggregation function 
   :math:`{\rm agg}`, typically :math:`{\rm mean}` or :math:`{\rm median}`, and the conformity scores 
   :math:`|Y_j - {\rm agg}(\hat{\mu}(B_{K(j)}(X_j)))|` are computed for each :math:`X_j`
-  (with :math:`K(j)` the boostraps not containing :math:`X_j`).
+  (with :math:`K(j)` the bootstraps not containing :math:`X_j`).
 
  
 - The sets :math:`\{\rm agg(\hat{\mu}_{K(j)}(X_i)) + r_j\}` (where :math:`j` indexes  
@@ -307,7 +307,7 @@ That is why a specific class is needed, namely
 :class:`mapie.time_series_regression.TimeSeriesRegressor`.
 
 Its implementation looks like the jackknife+-after-bootstrap method. The
-leave-one-out (LOO) estimators are approximated thanks to a few boostraps.
+leave-one-out (LOO) estimators are approximated thanks to a few bootstraps.
 However, the confidence intervals are like those of the jackknife method.
 
 .. math::

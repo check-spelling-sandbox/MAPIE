@@ -190,7 +190,7 @@ for strategy_name, strategy_params in STRATEGIES.items():
 ##############################################################################
 # Let’s now compare the target confidence intervals with the predicted
 # intervals obtained with the Jackknife+, Jackknife-minmax, CV+, CV-minmax,
-# Jackknife+-after-Boostrap, and conformalized quantile regression (CQR)
+# Jackknife+-after-Bootstrap, and conformalized quantile regression (CQR)
 # strategies. Note that when the CQR method is called thanks to
 # :class:`~mapie.quantile_regression.ConformalizedQuantileRegressor` with prefit=False,
 # it will use a "split" strategy.
@@ -267,7 +267,7 @@ plt.show()
 # The Jackknife, Jackknife+, CV, CV+, and J+aB
 # give
 # similar widths that are very close to the true width. On the other hand,
-# the width estimated by Jackknife-minmax, Jackknife-minmax-after-Boostrap
+# the width estimated by Jackknife-minmax, Jackknife-minmax-after-Bootstrap
 # and CV-minmax are slightly too
 # wide. Note that the widths given by Jackknife and CV strategies
 # are constant because there is a single model used for prediction,
@@ -441,7 +441,7 @@ for strategy_name, strategy_params in STRATEGIES.items():
 ##############################################################################
 # Once again, let’s compare the target confidence intervals with prediction
 # intervals obtained with the Jackknife+, Jackknife-minmax, CV+, CV-minmax,
-# Jackknife+-after-Boostrap, and CQR strategies.
+# Jackknife+-after-Bootstrap, and CQR strategies.
 
 strategies = [
     "jackknife_plus",

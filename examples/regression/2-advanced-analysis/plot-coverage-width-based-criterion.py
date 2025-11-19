@@ -182,7 +182,7 @@ for strategy_name, strategy_params in STRATEGIES.items():
 ##############################################################################
 # Once again, let’s compare the target confidence intervals with prediction
 # intervals obtained with the Jackknife+, Jackknife-minmax, CV+, CV-minmax,
-# Jackknife+-after-Boostrap, and CQR strategies.
+# Jackknife+-after-Bootstrap, and CQR strategies.
 
 
 def plot_1d_data(

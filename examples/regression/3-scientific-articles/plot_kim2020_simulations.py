@@ -23,7 +23,7 @@ numbers of bootstraps, for a given training set of size ``n``, and different
 resampling sets of size ``m``, following the discussion in [1].
 
 This simulation is carried out to assert that the jackknife+ and
-jackknife+-after-bootsrap methods implemented in MAPIE give the same
+jackknife+-after-bootstrap methods implemented in MAPIE give the same
 results than [1], and that the targeted coverage level is obtained.
 
 [1] Byol Kim, Chen Xu, and Rina Foygel Barber.
@@ -274,12 +274,12 @@ def comparison_JAB(
     confidence_level: float = 0.9,
     trials: int = 10,
     train_size: int = 200,
-    boostrap_size: int = 10,
+    bootstrap_size: int = 10,
     B_fixed: int = 50,
     random_state: int = 98765,
 ) -> pd.DataFrame:
     """
-    Launch trials of jackknife-plus and jackknife-plus_after_boostrap,
+    Launch trials of jackknife-plus and jackknife-plus_after_bootstrap,
     with B fixed and random, for a given number of resample size and a given
     number of trials, and returns the results as a DataFrame,
 
@@ -292,11 +292,11 @@ def comparison_JAB(
     confidence_level : float
         target coverage level.
     trials: int
-        Number of trials launch for a given boostrap set size.
+        Number of trials launch for a given bootstrap set size.
     train_size : int
         Size of the train set.
     bootstrap_size : int
-        Number of boostrap sizes to test,
+        Number of bootstrap sizes to test,
         uniformly distributed between 10 and 100%
         of the train set size.
     B_fixed : int
@@ -312,7 +312,7 @@ def comparison_JAB(
         DataFrame with columns:
         - itrial : the number of the trial
         - model : the estimator's name
-        - method : jackknife+ of jackknife+-after-bootsrap
+        - method : jackknife+ of jackknife+-after-bootstrap
         - coverage : PIs' coverage
         - width : mean PI's width
         - m : the resampling set size
@@ -321,11 +321,11 @@ def comparison_JAB(
 
     results = pd.DataFrame(
         columns=["itrial", "estimator", "method", "coverage", "width", "m"],
-        index=np.arange(trials * (2 * boostrap_size + 1)),
+        index=np.arange(trials * (2 * bootstrap_size + 1)),
     )
 
     (X, y) = get_X_y()
-    m_vals = np.round(train_size * np.linspace(0.1, 1, num=boostrap_size)).astype(int)
+    m_vals = np.round(train_size * np.linspace(0.1, 1, num=bootstrap_size)).astype(int)
 
     result_index = 0
     for itrial in range(trials):
@@ -503,7 +503,7 @@ if __name__ == "__main__":
         confidence_level=0.9,
         trials=2,
         train_size=40,
-        boostrap_size=5,
+        bootstrap_size=5,
         B_fixed=20,
     )
     print(results_coverages_widths.info())

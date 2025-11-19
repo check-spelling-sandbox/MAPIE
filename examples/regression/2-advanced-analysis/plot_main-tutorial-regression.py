@@ -299,7 +299,7 @@ pd.DataFrame(
 ##############################################################################
 # All strategies give effective coverage close to the
 # expected 0.95 value (recall that alpha = 0.05), confirming the theoretical
-# garantees.
+# guarantees.
 
 
 ##############################################################################

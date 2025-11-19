@@ -624,7 +624,7 @@ def test_alpha_in_predict() -> None:
 
 def test_compute_quantiles_value_error():
     """Test that if the size of the last axis of vector
-    is different from the number of aphas an error is raised.
+    is different from the number of alphas an error is raised.
     """
     vector = np.random.rand(1000, 1, 1)
     alphas = [0.1, 0.2, 0.3]

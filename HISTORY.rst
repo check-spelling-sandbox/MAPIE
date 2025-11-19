@@ -260,7 +260,7 @@ History
 * Inclusion in conda-forge with updated release checklist
 * Add time series example
 * Add epistemic uncertainty example
-* Remove CicleCI redundancy with ReadTheDocs
+* Remove CircleCI redundancy with ReadTheDocs
 * Remove Pep8speaks
 * Include linting in CI/CD
 * Use PyPa github actions for releases

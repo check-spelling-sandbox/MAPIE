@@ -34,7 +34,7 @@ random_state = 42
 
 WRONG_METHODS = ["rpcs", "rcr", "test", "llt"]
 WRONG_BOUNDS = ["wrs", "hoeff", "test", "", 1, 2.5, (1, 2)]
-WRONG_METRICS = ["presicion", "recal", ""]
+WRONG_METRICS = ["precision_", "recal", ""]
 
 
 STRATEGIES = {

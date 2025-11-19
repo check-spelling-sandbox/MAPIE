@@ -26,7 +26,7 @@ We consider the standard CV+ resampling method.
 We would like to emphasize one main limitation with this example.
 With the default conformity score, the prediction intervals
 are approximately equal over the range of house prices which may
-be inapporpriate when the price range is wide. The Gamma conformity score
+be inappropriate when the price range is wide. The Gamma conformity score
 overcomes this issue by considering prediction intervals with width
 proportional to the predicted mean. For low prices, the Gamma prediction
 intervals are narrower than the default ones, conversely to high prices

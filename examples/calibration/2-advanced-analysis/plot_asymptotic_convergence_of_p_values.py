@@ -9,7 +9,7 @@ the asymptotic convergence of these functions toward real p-values.
 Indeed, these quantities are only asymptotic p-values, i.e. when
 the number of observations is infinite. However, they can be safely
 used as real p-values even with moderate dataset sizes. This is what we
-are going to illustrate in this exampple.
+are going to illustrate in this example.
 
 To this end, we generate many datasets that are calibrated by nature,
 and plot the distribution of the p-values. A p-value must follow

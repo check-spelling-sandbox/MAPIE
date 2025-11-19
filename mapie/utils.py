@@ -1635,5 +1635,5 @@ def _raise_error_if_fit_called_in_prefit_mode(
     if is_mode_prefit:
         raise ValueError(
             "The fit method must be skipped when the prefit parameter is set to True. "
-            "Use the conformalize method directly after instanciation."
+            "Use the conformalize method directly after instantiation."
         )

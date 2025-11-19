@@ -100,7 +100,7 @@ def test_split_samples_Subsample(
 
 @pytest.mark.parametrize("n_samples", [0.4, 0.6, 3, 6])
 @pytest.mark.parametrize("n_resamplings", [2, 3, 4])
-def test_reproductibility_samples_Subsample(
+def test_reproducibility_samples_Subsample(
     n_resamplings: int, n_samples: Union[int, float]
 ) -> None:
     """This test ensures that each split between
@@ -192,7 +192,7 @@ def test_split_samples_BlockBootstrap(n_resamplings: int, length: int) -> None:
 
 @pytest.mark.parametrize("length", [2, 3, 4])
 @pytest.mark.parametrize("n_resamplings", [2, 3, 4])
-def test_reproductibility_samples_BlockBootstrap(
+def test_reproducibility_samples_BlockBootstrap(
     n_resamplings: int, length: int
 ) -> None:
     """This test ensures that each split between

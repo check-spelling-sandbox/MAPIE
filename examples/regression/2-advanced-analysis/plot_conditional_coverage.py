@@ -203,7 +203,7 @@ with pd.option_context("display.max_rows", None, "display.max_columns", None):
 # being slightly more conservative.
 
 
-# Visualition of the data and predictions
+# Visualisation of the data and predictions
 def plot_intervals(X, y, y_pred, intervals, title="", ax=None):
     """
     Plots the data X, y with associated intervals and predictions points.

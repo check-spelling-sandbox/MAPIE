@@ -78,7 +78,7 @@ fig.legend(
     fontsize=16,
 )
 
-plt.suptitle("Visualization of Train, Calibration, and Test Sets", fontsize=22)
+plt.suptitle("Visualisation of Train, Calibration, and Test Sets", fontsize=22)
 plt.tight_layout(rect=[0, 0.05, 1, 0.95])
 plt.show()
 

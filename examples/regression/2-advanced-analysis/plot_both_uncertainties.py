@@ -152,7 +152,7 @@ for strategy_name, strategy_params in STRATEGIES.items():
         y_pred[strategy_name], y_pis[strategy_name] = mapie.predict_interval(X_test)
 
 
-# Visualization
+# Visualisation
 def plot_1d_data(
     X_train: NDArray,
     y_train: NDArray,

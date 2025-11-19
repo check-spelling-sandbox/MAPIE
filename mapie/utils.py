@@ -797,7 +797,7 @@ def _check_estimator_fit_predict(
     estimator: Union[RegressorMixin, ClassifierMixin],
 ) -> None:
     """
-    Check that the estimator has a fit and precict method.
+    Check that the estimator has a fit and predict method.
 
     Parameters
     ----------

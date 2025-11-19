@@ -50,7 +50,7 @@ def get_r_hat_plus(
     Returns
     -------
     Tuple[NDArray, NDArray] of shape (n_lambdas, ) and (n_lambdas)
-        Average risk over all the obervations and upper bound of the risk.
+        Average risk over all the observations and upper bound of the risk.
 
     References
     ----------

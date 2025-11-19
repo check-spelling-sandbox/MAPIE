@@ -208,7 +208,7 @@ class ResidualNormalisedScore(BaseRegressionScore):
         ------
         Warning
             If the model predicts negative values as they are later thresholded
-            at self.eps. The model preffited should be trained with the log of
+            at self.eps. The model prefitted should be trained with the log of
             the residuals and predict the exponential of the predictions.
         """
         pred = self.residual_estimator_.predict(X)
@@ -216,7 +216,7 @@ class ResidualNormalisedScore(BaseRegressionScore):
             warnings.warn(
                 "WARNING: The residual model predicts negative values, "
                 + "they are later thresholded at self.eps."
-                "The model preffited should be trained with the log of "
+                "The model prefitted should be trained with the log of "
                 + "the residuals and his predict method should return "
                 + "the exponential of the predictions."
             )

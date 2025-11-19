@@ -44,7 +44,7 @@ from mapie.metrics.calibration import spiegelhalter_p_value
 from mapie.metrics.calibration import kolmogorov_smirnov_p_value, kuiper_p_value
 
 ##############################################################################
-# First we need to generate scores that are perfecty calibrated. To do so,
+# First we need to generate scores that are perfectly calibrated. To do so,
 # we simply start from a given array of probabilities between 0 and 1,
 # and draw random labels 0 or 1 according to these probabilities.
 

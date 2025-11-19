@@ -946,7 +946,7 @@ class _MapieQuantileRegressor(_MapieRegressor):
 
         symmetry: Optional[bool]
             Deciding factor to whether to find the quantile value for
-            each residuals separatly or to use the maximum of the two
+            each residuals separately or to use the maximum of the two
             combined.
 
         predict_params : dict

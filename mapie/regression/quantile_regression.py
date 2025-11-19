@@ -506,8 +506,8 @@ class _MapieQuantileRegressor(_MapieRegressor):
 
         ValueError
             We check if it's a known estimator that does quantile regression
-            according to the dictionnary set quantile_estimator_params.
-            This dictionnary will need to be updated with the latest new
+            according to the dictionary set quantile_estimator_params.
+            This dictionary will need to be updated with the latest new
             available estimators.
 
         ValueError

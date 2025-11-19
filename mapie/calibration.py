@@ -71,7 +71,7 @@ class TopLabelCalibrator(BaseEstimator, ClassifierMixin):
         Classifier fitted on the training data.
 
     calibrators: Dict[Union[int, str], RegressorMixin]
-        Dictionnary of all the fitted calibrators.
+        Dictionary of all the fitted calibrators.
 
     References
     ----------
@@ -320,7 +320,7 @@ class TopLabelCalibrator(BaseEstimator, ClassifierMixin):
         Returns
         -------
         Dict[Union[int, str], RegressorMixin]
-            Dictionnary of fitted calibrators.
+            Dictionary of fitted calibrators.
         """
         X, y = indexable(X, y)
         y = _check_y(y)

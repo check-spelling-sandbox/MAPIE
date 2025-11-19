@@ -311,7 +311,7 @@ for ax_viz, ax_hist, ax_distr, strategy in zip(
         np.abs(y_pis[strategy][:, 0, 0] - y_pis[strategy][:, 1, 0]), bins=num_bins
     )
     ax_distr.set_xlabel("Interval width")
-    ax_distr.set_ylabel("Occurences")
+    ax_distr.set_ylabel("Occurrences")
     ax_distr.set_title(strategy)
     ax_distr.set_xlim([0, max_width])
 

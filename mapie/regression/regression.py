@@ -1027,7 +1027,7 @@ class _MapieRegressor(RegressorMixin, BaseEstimator):
         BaseRegressionScore instance.
         It defines the link between the observed values, the predicted ones
         and the conformity scores. For instance, the default ``None`` value
-        correspondonds to a conformity score which assumes
+        corresponds to a conformity score which assumes
         y_obs = y_pred + conformity_score.
 
         - ``None``, to use the default ``AbsoluteConformityScore`` conformity

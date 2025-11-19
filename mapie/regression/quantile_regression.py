@@ -929,7 +929,7 @@ class _MapieQuantileRegressor(_MapieRegressor):
         are central to the computation.
         Prediction Intervals for a given ``alpha`` are deduced from the
         quantile regression at the alpha values: alpha/2, 1 - (alpha/2)
-        while adding a constant based uppon their residuals.
+        while adding a constant based on their residuals.
 
         Parameters
         ----------

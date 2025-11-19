@@ -120,7 +120,7 @@ method_params = {
 clf = MultiOutputClassifier(GaussianNB()).fit(X_train, y_train)
 
 alpha = np.arange(0.01, 1, 0.01)
-y_pss, recalls, thresholds, r_hats, r_hat_pluss = {}, {}, {}, {}, {}
+y_pss, recalls, thresholds, r_hats, r_hat_pluses = {}, {}, {}, {}, {}
 y_test_repeat = np.repeat(y_test[:, :, np.newaxis], len(alpha), 2)
 for i, (name, (method, bound)) in enumerate(method_params.items()):
     mapie = PrecisionRecallController(
@@ -134,7 +134,7 @@ for i, (name, (method, bound)) in enumerate(method_params.items()):
     ).mean(axis=0)
     thresholds[name] = mapie.lambdas_star
     r_hats[name] = mapie.r_hat
-    r_hat_pluss[name] = mapie.r_hat_plus
+    r_hat_pluses[name] = mapie.r_hat_plus
 
 
 ##############################################################################
@@ -182,7 +182,7 @@ fig, axs = plt.subplots(1, len(method_params), figsize=(8 * len(method_params), 
 for i, (name, (method, bound)) in enumerate(method_params.items()):
     axs[i].plot(mapie.lambdas, r_hats[name], label=r"$\hat{R}$", linewidth=2)
     if name != "CRC":
-        axs[i].plot(mapie.lambdas, r_hat_pluss[name], label=r"$\hat{R}^+$", linewidth=2)
+        axs[i].plot(mapie.lambdas, r_hat_pluses[name], label=r"$\hat{R}^+$", linewidth=2)
     axs[i].plot([0, 1], [alpha[9], alpha[9]], label=r"$\alpha$")
     axs[i].plot(
         [thresholds[name][9], thresholds[name][9]],

@@ -176,7 +176,7 @@ else:
 # Estimating prediction intervals can be possible in three ways:
 #
 # - with a regular ``.fit`` and ``.predict`` process, limiting the use of
-#   trainining set residuals to build prediction intervals
+#   training set residuals to build prediction intervals
 #
 # - using ``.update`` in addition to ``.fit`` and ``.predict`` allowing
 #   MAPIE to use new residuals from the test points as new data are becoming

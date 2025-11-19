@@ -216,7 +216,7 @@ plt.show()
 # every ``λ`` will be considered.
 # This means that a for a ``λ`` such that risk is below
 # ``α``
-# doesn't necessarly pass the FWER control! This is what we are going to
+# doesn't necessarily pass the FWER control! This is what we are going to
 # explore.
 
 mapie_clf = PrecisionRecallController(

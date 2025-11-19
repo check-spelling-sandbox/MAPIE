@@ -577,14 +577,14 @@ def test_valid_n_jobs(n_jobs: Any) -> None:
 
 @pytest.mark.parametrize("verbose", ["dummy", -1, 1.5, [1, 2]])
 def test_invalid_verbose(verbose: Any) -> None:
-    """Test that invalid verboses raise errors."""
+    """Test that invalid verbose values raise errors."""
     with pytest.raises(ValueError, match=r".*Invalid verbose argument.*"):
         _check_verbose(verbose)
 
 
 @pytest.mark.parametrize("verbose", [0, 10, 50])
 def test_valid_verbose(verbose: Any) -> None:
-    """Test that valid verboses raise no errors."""
+    """Test that valid verbose values raise no errors."""
     _check_verbose(verbose)
 
 

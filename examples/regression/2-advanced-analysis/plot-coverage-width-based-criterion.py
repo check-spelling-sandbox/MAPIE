@@ -45,7 +45,7 @@ RANDOM_STATE = 1
 # ---------------------------------------------------------------------
 #
 # Let's define again the ``x * sin(x)`` function and another simple
-# function that generates one-dimensional data with normal noise uniformely
+# function that generates one-dimensional data with normal noise uniformly
 # in a given interval.
 
 
@@ -56,7 +56,7 @@ def x_sinx(x):
 
 def get_1d_data_with_heteroscedastic_noise(funct, min_x, max_x, n_samples, noise):
     """
-    Generate 1D noisy data uniformely from the given function
+    Generate 1D noisy data uniformly from the given function
     and standard deviation for the noise.
     """
     np.random.seed(59)
@@ -70,7 +70,7 @@ def get_1d_data_with_heteroscedastic_noise(funct, min_x, max_x, n_samples, noise
 
 
 ##############################################################################
-# We first generate noisy one-dimensional data uniformely on an interval.
+# We first generate noisy one-dimensional data uniformly on an interval.
 # Here, the noise is considered as *heteroscedastic*, since it will increase
 # linearly with `x`.
 

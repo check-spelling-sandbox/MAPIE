@@ -1254,7 +1254,7 @@ class _MapieRegressor(RegressorMixin, BaseEstimator):
         Parameters
         ----------
         ensemble: bool
-            ``ensemble`` argument to check the coherennce with
+            ``ensemble`` argument to check the coherence with
             ``self.agg_function``.
 
         Raises

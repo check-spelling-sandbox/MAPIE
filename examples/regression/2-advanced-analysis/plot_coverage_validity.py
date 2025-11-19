@@ -9,7 +9,7 @@ when using the CP prefit/split methods.
 
 This notebook is inspired from the notebook used for episode "Uncertainty
 Quantification: Avoid these Missteps in Validating Your Conformal Claims!"
-(link to the [orginal notebook](https://github.com/mtorabirad/MLBoost)).
+(link to the [original notebook](https://github.com/mtorabirad/MLBoost)).
 
 For more details on theoretical guarantees:
 

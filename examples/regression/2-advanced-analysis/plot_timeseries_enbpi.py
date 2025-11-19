@@ -17,7 +17,7 @@ prediction intervals associated with time series forecast. It follows [6].
 We use here the Victoria electricity demand dataset used in the book
 "Forecasting: Principles and Practice" by R. J. Hyndman and G. Athanasopoulos.
 The electricity demand features daily and weekly seasonalities and is impacted
-by the temperature, considered here as an exogeneous variable.
+by the temperature, considered here as an exogenous variable.
 
 A Random Forest model is already fitted on data. The hyper-parameters are
 optimized with a :class:`~sklearn.model_selection.RandomizedSearchCV` using a

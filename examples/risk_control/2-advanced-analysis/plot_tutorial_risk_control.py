@@ -241,7 +241,7 @@ idx_max = np.argmin(r_hat[valid_index])
 # 3.2 Valid parameters for precision control
 # ----------------------------------------------------------------------------
 # We can see that not all ``λ`` such that risk is below the orange
-# line are choosen by the procedure. Otherwise, all the lambdas that are
+# line are chosen by the procedure. Otherwise, all the lambdas that are
 # in the red rectangle verify family wise error rate control and allow to
 # control precision at the desired level with a high probability.
 

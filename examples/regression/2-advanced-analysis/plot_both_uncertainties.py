@@ -59,7 +59,7 @@ def get_1d_data_with_normal_distrib(
 
     Returns
     -------
-    Tuple[NDArray, AnNDArrayy, NDArray, NDArray, NDArray]
+    Tuple[NDArray, AnNDArray, NDArray, NDArray, NDArray]
         Generated training and test data.
         [0]: X_train
         [1]: y_train

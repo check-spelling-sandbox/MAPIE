@@ -206,7 +206,7 @@ coverage_cqr = regression_coverage_score(y_test, y_pis_cqr)[0]
 # 2.3 Plot results
 # -----------------------------------------------------------------------------
 #
-# As fdor the MLP predictions, we plot the predictions of the LGBMRegressor
+# As for the MLP predictions, we plot the predictions of the LGBMRegressor
 # with their prediction intervals calculated with
 # :class:`~mapie.regression.ConformalizedQuantileRegressor`.
 

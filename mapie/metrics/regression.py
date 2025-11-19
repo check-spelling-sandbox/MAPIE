@@ -278,7 +278,7 @@ def hsic(
     coverage and the interval size.
 
     If hsic is 0, the two variables (the indicator of coverage and the
-    interval size) are independant.
+    interval size) are independent.
 
     Warning: This metric should be used only with non constant intervals
     (intervals of different sizes), with constant intervals the result

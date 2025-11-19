@@ -758,7 +758,7 @@ def _check_defined_variables_predict_cqr(
         Ensemble has not been defined in predict and therefore should
         will not have any effects in this method.
     alpha: Optional[Union[float, Iterable[float]]]
-        For ``MapieQuantileRegresor`` the alpha has to be defined
+        For ``MapieQuantileRegressor`` the alpha has to be defined
         directly in initial arguments of the class.
 
     Raises

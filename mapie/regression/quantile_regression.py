@@ -941,7 +941,7 @@ class _MapieQuantileRegressor(_MapieRegressor):
             will not have any effects in this method.
 
         alpha: Optional[Union[float, Iterable[float]]]
-            For ``MapieQuantileRegresor`` the alpha has to be defined
+            For ``MapieQuantileRegressor`` the alpha has to be defined
             directly in initial arguments of the class.
 
         symmetry: Optional[bool]

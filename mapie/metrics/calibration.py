@@ -105,7 +105,7 @@ def top_label_ece(
         probabilities.
     y_score_arg: Optional[ArrayLike] of shape (n_samples,)
         If only the maximum is provided in the y_scores, the argmax must
-        be provided here. This is optional and could be directly infered
+        be provided here. This is optional and could be directly inferred
         from the y_scores.
     num_bins: int
         Number of bins to make the split in the y_score. The allowed

@@ -515,7 +515,7 @@ class RAPSConformityScore(APSConformityScore):
         y_pred_proba_last: NDArray of shape (n_samples, 1, n_alpha)
             Last included probability.
 
-        predicition_sets: NDArray of shape (n_samples, n_alpha)
+        prediction_sets: NDArray of shape (n_samples, n_alpha)
             Prediction sets.
 
         Returns

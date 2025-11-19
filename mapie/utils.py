@@ -1137,7 +1137,7 @@ def _calc_bins(
 def _check_split_strategy(strategy: Optional[str]) -> str:
     """
     Checks that the split strategy provided is valid
-    and defults None split strategy to "uniform".
+    and defaults None split strategy to "uniform".
     Parameters
     ----------
     strategy: Optional[str]

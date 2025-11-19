@@ -121,7 +121,7 @@ History
 0.8.1 (2024-01-11)
 ------------------
 
-* First attemps at fixing library conda issue.
+* First attempts at fixing library conda issue.
 
 0.8.0 (2024-01-03)
 ------------------

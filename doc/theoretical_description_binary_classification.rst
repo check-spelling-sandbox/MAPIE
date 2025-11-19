@@ -1,6 +1,6 @@
 .. title:: Theoretical Description Binary Classification : contents
 
-.. _theoretical_description_binay_classification:
+.. _theoretical_description_binary_classification:
 
 #######################
 Theoretical Description

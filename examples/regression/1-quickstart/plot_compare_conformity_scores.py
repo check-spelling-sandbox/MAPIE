@@ -63,7 +63,7 @@ rf_kwargs = {"n_estimators": 10, "random_state": RANDOM_STATE}
 model = RandomForestRegressor(**rf_kwargs)
 
 ##############################################################################
-# 1. Load dataset with a target following approximativeley a Gamma distribution
+# 1. Load dataset with a target following approximately a Gamma distribution
 # -----------------------------------------------------------------------------
 #
 # We start by loading a dataset with a target following approximately

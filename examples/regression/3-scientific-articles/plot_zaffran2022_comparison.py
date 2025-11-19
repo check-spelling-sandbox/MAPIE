@@ -212,7 +212,7 @@ for i in range(min(test_size, iteration_max + 1)):
     y_train = np.array(Y[i : (train_size + i)])
     y_test = np.array(Y[(train_size + i)]).reshape(1, -1)
 
-    # Fit the model with new tran/calib dataset
+    # Fit the model with new train/calib dataset
     mapie_aci = mapie_aci.fit(x_train, y_train)
 
     # Predict on test dataset

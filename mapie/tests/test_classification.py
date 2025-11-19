@@ -768,7 +768,7 @@ class WrongOutputModel:
         return self.proba_out
 
 
-class Float32OuputModel:
+class Float32OutputModel:
     def __init__(self, prefit: bool = True):
         self.trained_ = prefit
         self.classes_ = [0, 1, 2]
@@ -1549,7 +1549,7 @@ def test_classif_float32(cv) -> None:
         n_samples=20, n_features=20, n_redundant=0, n_informative=20, n_classes=3
     )
     alpha = 0.9
-    dummy_classif = Float32OuputModel()
+    dummy_classif = Float32OutputModel()
 
     mapie = _MapieClassifier(
         estimator=dummy_classif,

@@ -191,7 +191,7 @@ class NaiveConformityScore(BaseClassificationScore):
         zeros_scores_proba_last = y_pred_proba_last <= EPSILON
 
         # If the last included proba is zero, change it to the
-        # smallest non-zero value to avoid inluding them in the
+        # smallest non-zero value to avoid including them in the
         # prediction sets.
         if np.sum(zeros_scores_proba_last) > 0:
             y_pred_proba_last[zeros_scores_proba_last] = np.expand_dims(

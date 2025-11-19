@@ -495,7 +495,7 @@ class RAPSConformityScore(APSConformityScore):
 
     def _compute_v_parameter(
         self,
-        y_proba_last_cumsumed: NDArray,
+        y_proba_last_cumsummed: NDArray,
         threshold: NDArray,
         y_pred_proba_last: NDArray,
         prediction_sets: NDArray,
@@ -506,7 +506,7 @@ class RAPSConformityScore(APSConformityScore):
 
         Parameters
         -----------
-        y_proba_last_cumsumed: NDArray of shape (n_samples, n_alpha)
+        y_proba_last_cumsummed: NDArray of shape (n_samples, n_alpha)
             Cumulated score of the last included label.
 
         threshold: NDArray of shape (n_alpha,) or shape (n_samples_train,)
@@ -525,7 +525,7 @@ class RAPSConformityScore(APSConformityScore):
         """
         # compute V parameter from Angelopoulos+(2020)
         L = np.sum(prediction_sets, axis=1)
-        v_param = (y_proba_last_cumsumed - threshold.reshape(1, -1)) / (
+        v_param = (y_proba_last_cumsummed - threshold.reshape(1, -1)) / (
             y_pred_proba_last[:, 0, :]
             - self.lambda_star * np.maximum(0, L - self.k_star)
             + self.lambda_star * (L > self.k_star)

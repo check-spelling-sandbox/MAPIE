@@ -85,7 +85,7 @@ def get_last_index_included(
     Parameters
     ----------
     y_pred_proba_cumsum: NDArray of shape (n_samples, n_classes)
-        Cumsumed probabilities in the original order.
+        Cumsummed probabilities in the original order.
 
     threshold: NDArray of shape (n_alpha,) or shape (n_samples_train,)
         Threshold to compare with y_proba_last_cumsum, can be either:

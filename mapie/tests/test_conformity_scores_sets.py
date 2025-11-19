@@ -98,7 +98,7 @@ def test_regularize_conf_scores_shape(k_lambda) -> None:
 
 def test_get_true_label_cumsum_proba_shape() -> None:
     """
-    Test that the true label cumsumed probabilities
+    Test that the true label cumsummed probabilities
     have the correct shape.
     """
     clf = LogisticRegression()
@@ -116,7 +116,7 @@ def test_get_true_label_cumsum_proba_shape() -> None:
 
 def test_get_true_label_cumsum_proba_result() -> None:
     """
-    Test that the true label cumsumed probabilities
+    Test that the true label cumsummed probabilities
     are the expected ones.
     """
     clf = LogisticRegression()

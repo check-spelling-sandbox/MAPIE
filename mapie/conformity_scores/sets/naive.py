@@ -163,7 +163,7 @@ class NaiveConformityScore(BaseClassificationScore):
         Tuple[ArrayLike, ArrayLike, ArrayLike]
             Arrays of shape (n_samples, n_classes, n_alphas),
             (n_samples, 1, n_alphas) and (n_samples, 1, n_alphas).
-            They are respectively the cumsumed scores in the original
+            They are respectively the cumsummed scores in the original
             order which can be different according to the value of alpha
             with the RAPS method, the index of the last included score
             and the value of the last included score.

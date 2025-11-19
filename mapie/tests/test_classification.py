@@ -1580,7 +1580,7 @@ def test_error_raps_cv_not_prefit(cv: Union[int, None]) -> None:
 
 def test_not_all_label_in_calib() -> None:
     """
-    Test that the true label cumsumed probabilities
+    Test that the true label cumsummed probabilities
     have the correct shape.
     """
     clf = LogisticRegression()

@@ -90,7 +90,7 @@ class APSConformityScore(NaiveConformityScore):
         y: ArrayLike, y_pred_proba: NDArray, classes: ArrayLike
     ) -> Tuple[NDArray, NDArray]:
         """
-        Compute the cumsumed probability of the true label.
+        Compute the cumsummed probability of the true label.
 
         Parameters
         ----------
@@ -205,7 +205,7 @@ class APSConformityScore(NaiveConformityScore):
 
     def _compute_v_parameter(
         self,
-        y_proba_last_cumsumed: NDArray,
+        y_proba_last_cumsummed: NDArray,
         threshold: NDArray,
         y_pred_proba_last: NDArray,
         prediction_sets: NDArray,
@@ -216,7 +216,7 @@ class APSConformityScore(NaiveConformityScore):
 
         Parameters
         -----------
-        y_proba_last_cumsumed: NDArray of shape (n_samples, n_alpha)
+        y_proba_last_cumsummed: NDArray of shape (n_samples, n_alpha)
             Cumulated score of the last included label.
 
         threshold: NDArray of shape (n_alpha,) or shape (n_samples_train,)
@@ -235,7 +235,7 @@ class APSConformityScore(NaiveConformityScore):
         """
         # compute V parameter from Romano+(2020)
         v_param = (
-            y_proba_last_cumsumed - threshold.reshape(1, -1)
+            y_proba_last_cumsummed - threshold.reshape(1, -1)
         ) / y_pred_proba_last[:, 0, :]
         return v_param
 
@@ -263,7 +263,7 @@ class APSConformityScore(NaiveConformityScore):
             Index of the last included label.
 
         y_pred_proba_cumsum: NDArray of shape (n_samples, n_classes)
-            Cumsumed probability of the model in the original order.
+            Cumsummed probability of the model in the original order.
 
         y_pred_proba_last: NDArray of shape (n_samples, 1, threshold)
             Last included probability.
@@ -283,14 +283,14 @@ class APSConformityScore(NaiveConformityScore):
         NDArray of shape (n_samples, n_classes, n_alpha)
             Updated version of prediction_sets with randomly removed labels.
         """
-        # get cumsumed probabilities up to last retained label
-        y_proba_last_cumsumed = np.squeeze(
+        # get cumsummed probabilities up to last retained label
+        y_proba_last_cumsummed = np.squeeze(
             np.take_along_axis(y_pred_proba_cumsum, y_pred_index_last, axis=1), axis=1
         )
 
         # get the V parameter from Romano+(2020) or Angelopoulos+(2020)
         v_param = self._compute_v_parameter(
-            y_proba_last_cumsumed, threshold, y_pred_proba_last, prediction_sets
+            y_proba_last_cumsummed, threshold, y_pred_proba_last, prediction_sets
         )
 
         # get random numbers for each observation and alpha value
